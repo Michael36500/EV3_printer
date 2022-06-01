@@ -1,2 +1,2 @@
-Tohle je můj robot, co umí namalovat za pomoci fixky na papír v podstatě cokoliv. Je kompletně z LEGA, a řídího souprava Mindstorms EV3 s MicroPythonem v sobě. Konstrukcí je to plotr, fixa se pohybuje po jedné ose, a papír pod ní
-Funguje jako tiskárna. Nemaluje klasicky tvary, ale přerušované linky, které dohromady dají obraz. Fixa jede podél jedné osy, a občas se nadzvedne, a po
+Tohle je můj robot, co umí namalovat za pomoci fixky na papír v podstatě cokoliv. Je kompletně z LEGA, a řídího souprava Mindstorms EV3 s MicroPythonem v sobě. Konstrukcí je to plotr, fixa se pohybuje po jedné ose, a papír pod ní.
+Funguje jako tiskárna. Nemaluje klasicky tvary, ale přerušované linky, které dohromady dají obraz. Fixa jede podél jedné osy, a občas nadzvedává se, a tím vytváří přerušovanou čáru. A když jich dáte spoustu vedle sebe, tak z toho vznikne obrázek. V podstatě postupně tiskne řádky pixlů...

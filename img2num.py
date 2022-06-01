@@ -4,7 +4,7 @@ import numpy as np
 import pyperclip
 from tqdm import tqdm
 
-path = "horvi.png"
+path = "mafus.png"
 
 ############################################################################################################################################################
 #!! pozor na orientaci, teď je normálně (hlavou vzhůru)
@@ -71,7 +71,7 @@ def Nums(path):
 
     out.append (cis)
     
-    out = "robot = " + str(out)
+    out = "robot = " + str(out) + "   #{}".format(path)
 
     return out
 
