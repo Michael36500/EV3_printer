@@ -14,4 +14,5 @@ for i in range(toolbar_width):
     sys.stdout.write("-")
     sys.stdout.flush()
 
-sys.stdout.write("]\n") # this ends the progress bar
+
+
