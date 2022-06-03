@@ -4,7 +4,7 @@ import numpy as np
 import pyperclip
 from tqdm import tqdm
 
-path = "shrek.png"
+path = "tygr_b.png"
 
 ############################################################################################################################################################
 #!! pozor na orientaci, teď je normálně (hlavou vzhůru)
