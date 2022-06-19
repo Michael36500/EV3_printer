@@ -81,5 +81,5 @@ def Nums(path):
 # copy in clipboarad
 syntax = Nums(path)
 pyperclip.copy(syntax)
-print(syntax)
+# print(syntax) 
 print("Copied") 

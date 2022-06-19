@@ -17,7 +17,7 @@ stop_w = StopWatch()
 
 # setup touch senzory
 touch_sensor = TouchSensor(Port.S4)
-touch_spust = TouchSensor(Port.S3)
+# touch_spust = TouchSensor(Port.S3)
 
 # setup motory 
 M_papir = Motor(Port.A)
@@ -35,8 +35,8 @@ dal = set_dal
 paper = 0
 
 # setup velikost obrázku, potřeba vyladit k sobě
-zmena_p = 2.5
-zmena_carka = zmena_p   #?
+zmena_p = 5
+zmena_carka = zmena_p   #?s
 zmena_radek = zmena_p * 1.5
 
 # setup toho, co chci tisknout
@@ -63,7 +63,7 @@ def push_up():
     global is_up
     #global M_pero
     if is_up == False:
-        M_pero.run_target(200, 25)
+        M_pero.run_target(200, 20)
         is_up = True
 
         
@@ -76,7 +76,7 @@ def push_down():
 
 # dojede na začátek 
 def jdi_na():
-    M_vozik.run(300)                # >>>>>>>>>>>>>>>>>>>>>>>>>> když jsem s, tak 400, jinak 200
+    M_vozik.run(150)                # >>>>>>>>>>>>>>>>>>>>>>>>>> když jsem s, tak 400, jinak 200
     while True:
         if touch_sensor.pressed():
             M_vozik.brake()
@@ -177,4 +177,8 @@ push_up()
 
 
 # po dokončení píp
+ev3.speaker.beep(frequency=1760, duration=500)
 ev3.speaker.beep(frequency=440, duration=500)
+ev3.speaker.beep(frequency=1760, duration=500)
+ev3.speaker.beep(frequency=440, duration=500)
+ev3.speaker.beep(frequency=1760, duration=1000)
