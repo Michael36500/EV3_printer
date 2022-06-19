@@ -4,7 +4,7 @@ import numpy as np
 import pyperclip
 from tqdm import tqdm
 
-path = "tygr_b.png"
+path = "spiderman3.png"
 
 ############################################################################################################################################################
 #!! pozor na orientaci, teď je normálně (hlavou vzhůru)
@@ -80,5 +80,5 @@ def Nums(path):
 # copy in clipboarad
 syntax = Nums(path)
 pyperclip.copy(syntax)
-print(syntax)
+# print(syntax)
 print("Copied") 
