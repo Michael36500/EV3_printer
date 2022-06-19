@@ -4,7 +4,8 @@ import numpy as np
 import pyperclip
 from tqdm import tqdm
 
-path = "tygr_b.png"
+# path = "tygr_b.png"
+path = input("Který obrázek chceš vytisknout? \n")
 
 ############################################################################################################################################################
 #!! pozor na orientaci, teď je normálně (hlavou vzhůru)
