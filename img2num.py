@@ -5,8 +5,9 @@ import pyperclip
 from tqdm import tqdm
 import os
 
-print(os.listdir())
-
+files = os.listdir()
+for file in files:
+    print(file)
 # path = "tygr_b.png"
 path = input("Který obrázek chceš vytisknout? \n")
 
