@@ -3,6 +3,9 @@ import numpy as np
 # from datetime import datetime
 import pyperclip
 from tqdm import tqdm
+import os
+
+print(os.listdir())
 
 # path = "tygr_b.png"
 path = input("Který obrázek chceš vytisknout? \n")
