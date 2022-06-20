@@ -75,7 +75,9 @@ def Nums(path):
 
     out.append (cis)
     
-    out = "robot = " + str(out) + "   #{}".format(path)
+    out = str(out) + "   #{}".format(path)
+    # out = "robot = " + str(out) + "   #{}".format(path)
+    out = "def robot(): \n\treturn " + str(out)
 
     return out
 
