@@ -35,7 +35,7 @@ dal = set_dal
 paper = 0
 
 # setup velikost obrázku, potřeba vyladit k sobě
-zmena_p = 2.5
+zmena_p = 4
 zmena_carka = zmena_p   #?s
 zmena_radek = zmena_p * 1.5
 
@@ -43,7 +43,7 @@ zmena_radek = zmena_p * 1.5
 robot = robot.robot()
 
 sirka = 300
-
+    
 
 # setup aktuální číslo řádku, celkem dopočítáno, pro procenta
 cislo_radku = 0
@@ -109,9 +109,9 @@ def carka(move, fast = False):
     global dal
     dal = dal - (zmena_carka * move)
     if fast == True:
-        M_vozik.run_target(120, dal) # DOLADIT !!!!!!!
+        M_vozik.run_target(200, dal) # DOLADIT !!!!!!!
     elif fast == False:
-        M_vozik.run_target(60, dal) # DOLADIT !!!!!!!
+        M_vozik.run_target(100, dal) # DOLADIT !!!!!!!
     else:
         print("Error, už zase? Jinak, máš problém s rychlopohybem, a tím, co do něj posíláš (fast)")
 # main loop
@@ -175,64 +175,65 @@ jdi_na()
 
 # tisk
 Print_Color(robot)
+print("DONE")
 push_up()
 
 
 # po dokončení píp
 tempo = 120
-# while True:
-#     ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=1174.66, duration=2 * tempo)
-#     ev3.speaker.beep(frequency=880, duration=2 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=830.61, duration=1 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=698.46, duration=2 * tempo)
-#     ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=698.46, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
+while True:
+    ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
+    ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
+    ev3.speaker.beep(frequency=1174.66, duration=2 * tempo)
+    ev3.speaker.beep(frequency=880, duration=2 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=830.61, duration=1 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=698.46, duration=2 * tempo)
+    ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
+    ev3.speaker.beep(frequency=698.46, duration=1 * tempo)
+    ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
 
-#     ev3.speaker.beep(frequency=523.25, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=523.25, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=1174.66, duration=2 * tempo)
-#     ev3.speaker.beep(frequency=880, duration=2 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=830.61, duration=1 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=698.46, duration=2 * tempo)
-#     ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=698.46, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
+    ev3.speaker.beep(frequency=523.25, duration=1 * tempo)
+    ev3.speaker.beep(frequency=523.25, duration=1 * tempo)
+    ev3.speaker.beep(frequency=1174.66, duration=2 * tempo)
+    ev3.speaker.beep(frequency=880, duration=2 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=830.61, duration=1 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=698.46, duration=2 * tempo)
+    ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
+    ev3.speaker.beep(frequency=698.46, duration=1 * tempo)
+    ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
 
-#     ev3.speaker.beep(frequency=493.88, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=493.88, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=1174.66, duration=2 * tempo)
-#     ev3.speaker.beep(frequency=880, duration=2 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=830.61, duration=1 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=698.46, duration=2 * tempo)
-#     ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=698.46, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
+    ev3.speaker.beep(frequency=493.88, duration=1 * tempo)
+    ev3.speaker.beep(frequency=493.88, duration=1 * tempo)
+    ev3.speaker.beep(frequency=1174.66, duration=2 * tempo)
+    ev3.speaker.beep(frequency=880, duration=2 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=830.61, duration=1 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=698.46, duration=2 * tempo)
+    ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
+    ev3.speaker.beep(frequency=698.46, duration=1 * tempo)
+    ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
 
-#     ev3.speaker.beep(frequency=466.16, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=466.16, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=1174.66, duration=2 * tempo)
-#     ev3.speaker.beep(frequency=880, duration=2 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=830.61, duration=1 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
-#     wait(1 * tempo)
-#     ev3.speaker.beep(frequency=698.46, duration=2 * tempo)
-#     ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=698.46, duration=1 * tempo)
-#     ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
+    ev3.speaker.beep(frequency=466.16, duration=1 * tempo)
+    ev3.speaker.beep(frequency=466.16, duration=1 * tempo)
+    ev3.speaker.beep(frequency=1174.66, duration=2 * tempo)
+    ev3.speaker.beep(frequency=880, duration=2 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=830.61, duration=1 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=783.99, duration=1 * tempo)
+    wait(1 * tempo)
+    ev3.speaker.beep(frequency=698.46, duration=2 * tempo)
+    ev3.speaker.beep(frequency=587.33, duration=1 * tempo)
+    ev3.speaker.beep(frequency=698.46, duration=1 * tempo)
+    ev3.speaker.beep(frequency=783.99, duration=1 * tempo)

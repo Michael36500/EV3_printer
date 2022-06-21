@@ -11,7 +11,7 @@ for file in files:
 # path = "tygr_b.png"
 path = input("Který obrázek chceš vytisknout? \n")
 
-############################################################################################################################################################
+################################################### #########################################################################################################
 #!! pozor na orientaci, teď je normálně (hlavou vzhůru)
 
 #####################
@@ -33,6 +33,7 @@ def Nums(path):
     th, img = cv2.threshold(img, 128, 255, cv2.THRESH_BINARY)
     # print(img)
     for line in tqdm(img):
+    # for line in img:
         for sgm in line:
             if sgm == 255:
                 sgm = 1
@@ -58,6 +59,7 @@ def Nums(path):
 
 
     for pos in tqdm(inp):
+    # for pos in inp:
         if pos == 2:
             out.append (cis)
             cis = 0
