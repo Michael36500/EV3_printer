@@ -35,7 +35,7 @@ dal = set_dal
 paper = 0
 
 # setup velikost obrázku, potřeba vyladit k sobě
-zmena_p = 4
+zmena_p = 2.5
 zmena_carka = zmena_p   #?s
 zmena_radek = zmena_p * 1.5
 
