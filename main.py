@@ -7,7 +7,6 @@ from pybricks.ev3devices import Motor, ColorSensor, TouchSensor
 from pybricks.parameters import Port
 from pybricks.tools import wait, StopWatch
 import sys
-import def_robot as robot
 # import img2num as imgnm
 
 
@@ -41,7 +40,7 @@ zmena_carka = zmena_p   #?s
 zmena_radek = zmena_p * 1.5
 
 # setup toho, co chci tisknout
-robot = robot.robot()
+robot = []
 
 sirka = 266
     
